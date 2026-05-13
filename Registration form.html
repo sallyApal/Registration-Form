@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Forms Practice
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            Registration Form
+        </h1>
+
+        <form action="/process" method="post">
+
+            <div>
+                <label for="first_name">
+                    First Name:
+                </label>
+                <input type="text" id="first_name" name="first_name">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password">
+                    Password:
+                </label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="dob">
+                    Date of Birth:
+                </label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <br>
+
+            <div>
+                <p>
+                    Choose your favorite language:
+                </p>
+
+                <input type="radio" id="html" name="language" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="radio" id="css" name="language" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="radio" id="javascript" name="language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <br>
+
+            <div>
+                <p>
+                    Select your hobbies:
+                </p>
+
+                <input type="checkbox" id="reading" name="hobby" value="Reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" id="sports" name="hobby" value="Sports">
+                <label for="sports">Sports</label>
+
+                <input type="checkbox" id="music" name="hobby" value="Music">
+                <label for="music">Music</label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="comments">
+                    Comments:
+                </label>
+                <br>
+                <textarea id="comments" name="comments" cols="30" rows="5"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="country">
+                    Choose your country:
+                </label>
+
+                <select id="country" name="country">
+                    <option>Palestine</option>
+                    <option>Jordan</option>
+                    <option>Egypt</option>
+                    <option>Lebanon</option>
+                </select>
+            </div>
+
+            <br>
+
+            <input type="submit" value="Submit Form">
+
+        </form>
+    </body>
+</html>
