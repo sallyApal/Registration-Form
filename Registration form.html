@@ -1,106 +1,91 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            HTML Forms Practice
-        </title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form Practice</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
 
-    <body>
-        <h1>
-            Registration Form
-        </h1>
+    <form action="/process" method="post">
+        <div>
+            <label for="first_name">First Name: * </label>
+            <input type="text" id="first_name" name="first_name">
+        </div>
+        <br>
 
-        <form action="/process" method="post">
+        <div>
+            <label for="last_name">Last Name: * </label>
+            <input type="text" id="last_name" name="last_name">
+        </div>
+        <br>
 
-            <div>
-                <label for="first_name">
-                    First Name:
-                </label>
-                <input type="text" id="first_name" name="first_name">
-            </div>
+        <div>
+            <label for="email">Email Address: * </label>
+            <input type="text" id="email" name="email">
+        </div>
+        <br>
 
-            <br>
+        <div>
+            <label for="password">Password: * </label>
+            <input type="password" id="password" name="password">
+        </div>
+        <br>
 
-            <div>
-                <label for="password">
-                    Password:
-                </label>
-                <input type="password" id="password" name="password">
-            </div>
+        <div>
+            <label for="confirm_password">Confirm Password: * </label>
+            <input type="password" id="confirm_password" name="confirm_password">
+        </div>
+        <br>
 
-            <br>
+        <div>
+            <label for="dob">Birthday: </label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <br>
 
-            <div>
-                <label for="dob">
-                    Date of Birth:
-                </label>
-                <input type="date" id="dob" name="dob">
-            </div>
+        <div>
+            <p>Gender Identity:</p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" name="gender" id="non-binary" value="non-binary">
+            <label for="non-binary">Non-binary</label>
+            
+            <input type="radio" name="gender" id="no_answer" value="no_answer">
+            <label for="no_answer">I prefer not to answer</label>
+        </div>
+        <br>
 
-            <br>
+        <div>
+            <p>A short description about myself:</p>
+            <textarea name="description" id="description" cols="40" rows="3"></textarea>
+        </div>
+        <br>
 
-            <div>
-                <p>
-                    Choose your favorite language:
-                </p>
+        <div>
+            <label for="language">Favorite Language: </label>
+            <select name="language" id="language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+        </div>
+        <br>
 
-                <input type="radio" id="html" name="language" value="HTML">
-                <label for="html">HTML</label>
+        <div>
+            <input type="checkbox" name="updates" id="updates" checked>
+            <label for="updates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <br>
 
-                <input type="radio" id="css" name="language" value="CSS">
-                <label for="css">CSS</label>
+        <input type="submit" value="Create Account">
 
-                <input type="radio" id="javascript" name="language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
-            </div>
-
-            <br>
-
-            <div>
-                <p>
-                    Select your hobbies:
-                </p>
-
-                <input type="checkbox" id="reading" name="hobby" value="Reading">
-                <label for="reading">Reading</label>
-
-                <input type="checkbox" id="sports" name="hobby" value="Sports">
-                <label for="sports">Sports</label>
-
-                <input type="checkbox" id="music" name="hobby" value="Music">
-                <label for="music">Music</label>
-            </div>
-
-            <br>
-
-            <div>
-                <label for="comments">
-                    Comments:
-                </label>
-                <br>
-                <textarea id="comments" name="comments" cols="30" rows="5"></textarea>
-            </div>
-
-            <br>
-
-            <div>
-                <label for="country">
-                    Choose your country:
-                </label>
-
-                <select id="country" name="country">
-                    <option>Palestine</option>
-                    <option>Jordan</option>
-                    <option>Egypt</option>
-                    <option>Lebanon</option>
-                </select>
-            </div>
-
-            <br>
-
-            <input type="submit" value="Submit Form">
-
-        </form>
-    </body>
+        <p>* Indicates a required field</p>
+    </form>
+</body>
 </html>
